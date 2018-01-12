@@ -1,0 +1,129 @@
+Translating bg2pyr.mod into bg2pyr.c
+Notice: Use of state_discontinuity is not thread safeNotice: Use of state_discontinuity in a NET_RECEIVE block is unnecessary and prevents use of this mechanism in a multithreaded simulation.
+Notice: Use of state_discontinuity is not thread safeNotice: Use of state_discontinuity in a NET_RECEIVE block is unnecessary and prevents use of this mechanism in a multithreaded simulation.
+Notice: Use of state_discontinuity is not thread safeNotice: Use of state_discontinuity in a NET_RECEIVE block is unnecessary and prevents use of this mechanism in a multithreaded simulation.
+Notice: Use of state_discontinuity is not thread safeNotice: Use of state_discontinuity in a NET_RECEIVE block is unnecessary and prevents use of this mechanism in a multithreaded simulation.
+Translating cadyn.mod into cadyn.c
+Thread Safe
+Translating cal2.mod into cal2.c
+Notice: Assignment to the GLOBAL variable, "minf", is not thread safe
+Notice: Assignment to the GLOBAL variable, "tau", is not thread safe
+Translating ca.mod into ca.c
+Notice: VERBATIM blocks are not thread safe
+Notice: This mechanism cannot be used with CVODE
+Notice: Assignment to the GLOBAL variable, "tadj", is not thread safe
+Translating capool.mod into capool.c
+WARNING: xx (a STATE) is assigned a value in a DERIVATIVE block.
+ Multistep integrators (such as Runge) may not work correctly.
+Thread Safe
+Translating function_TMonitor.mod into function_TMonitor.c
+Thread Safe
+Translating gap.mod into gap.c
+Notice: Use of POINTER is not thread safe.
+Translating Gfluct_new_exc.mod into Gfluct_new_exc.c
+Notice: This mechanism cannot be used with CVODE
+Thread Safe
+Translating Gfluct_new_inh.mod into Gfluct_new_inh.c
+Notice: This mechanism cannot be used with CVODE
+Thread Safe
+Translating h.mod into h.c
+Thread Safe
+Translating im.mod into im.c
+Thread Safe
+Translating interD2interD_STFD_new.mod into interD2interD_STFD_new.c
+Notice: scop_random is not thread safe
+WARNING: Dimensions may be wrong for READ ica with POINT_PROCESS
+WARNING: Dimensions may be wrong for READ ica with POINT_PROCESS
+WARNING: Dimensions may be wrong for READ ica with POINT_PROCESS
+WARNING: Dimensions may be wrong for READ ica with POINT_PROCESS
+WARNING: Dimensions may be wrong for READ ica with POINT_PROCESS
+interD2interD_STFD_new.c: In function '_interD2interD_STFD_new_reg':
+interD2interD_STFD_new.c:468:36: warning: passing argument 3 of '_nrn_thread_reg' from incompatible pointer type
+      _nrn_thread_reg(_mechtype, 2, _update_ion_pointer);
+                                    ^
+interD2interD_STFD_new.c:452:13: note: expected 'void (**)(union Datum *)' but argument is of type 'void (*)(union Datum *)'
+ extern void _nrn_thread_reg(int, int, void(*f)(Datum*));
+             ^
+Translating interD2pyrD_STFD_new.mod into interD2pyrD_STFD_new.c
+Notice: scop_random is not thread safe
+WARNING: Dimensions may be wrong for READ ica with POINT_PROCESS
+WARNING: Dimensions may be wrong for READ ica with POINT_PROCESS
+WARNING: Dimensions may be wrong for READ ica with POINT_PROCESS
+WARNING: Dimensions may be wrong for READ ica with POINT_PROCESS
+WARNING: Dimensions may be wrong for READ ica with POINT_PROCESS
+interD2pyrD_STFD_new.c: In function '_interD2pyrD_STFD_new_reg':
+interD2pyrD_STFD_new.c:465:36: warning: passing argument 3 of '_nrn_thread_reg' from incompatible pointer type
+      _nrn_thread_reg(_mechtype, 2, _update_ion_pointer);
+                                    ^
+interD2pyrD_STFD_new.c:449:13: note: expected 'void (**)(union Datum *)' but argument is of type 'void (*)(union Datum *)'
+ extern void _nrn_thread_reg(int, int, void(*f)(Datum*));
+             ^
+Translating kadist.mod into kadist.c
+Notice: Assignment to the GLOBAL variable, "linf", is not thread safe
+Notice: Assignment to the GLOBAL variable, "ninf", is not thread safe
+Notice: Assignment to the GLOBAL variable, "taun", is not thread safe
+Notice: Assignment to the GLOBAL variable, "taul", is not thread safe
+Translating kaprox.mod into kaprox.c
+Thread Safe
+Translating kdrca1DA.mod into kdrca1DA.c
+Thread Safe
+Translating kdrca1.mod into kdrca1.c
+Thread Safe
+Translating kdrinter.mod into kdrinter.c
+Thread Safe
+Translating leakDA.mod into leakDA.c
+Thread Safe
+Translating leakinter.mod into leakinter.c
+Thread Safe
+Translating leak.mod into leak.c
+Thread Safe
+Translating na3DA.mod into na3DA.c
+Notice: Assignment to the GLOBAL variable, "htau", is not thread safe
+Notice: Assignment to the GLOBAL variable, "hinf", is not thread safe
+Notice: Assignment to the GLOBAL variable, "mtau", is not thread safe
+Notice: Assignment to the GLOBAL variable, "minf", is not thread safe
+Notice: Assignment to the GLOBAL variable, "sinf", is not thread safe
+Notice: Assignment to the GLOBAL variable, "taus", is not thread safe
+Translating na3.mod into na3.c
+Notice: Assignment to the GLOBAL variable, "htau", is not thread safe
+Notice: Assignment to the GLOBAL variable, "hinf", is not thread safe
+Notice: Assignment to the GLOBAL variable, "mtau", is not thread safe
+Notice: Assignment to the GLOBAL variable, "minf", is not thread safe
+Notice: Assignment to the GLOBAL variable, "sinf", is not thread safe
+Notice: Assignment to the GLOBAL variable, "taus", is not thread safe
+Translating nainter.mod into nainter.c
+Thread Safe
+Translating nap.mod into nap.c
+Thread Safe
+Translating nat.mod into nat.c
+Thread Safe
+Translating pyrD2interD_STFD.mod into pyrD2interD_STFD.c
+Notice: scop_random is not thread safe
+pyrD2interD_STFD.c: In function '_pyrD2interD_STFD_reg':
+pyrD2interD_STFD.c:419:36: warning: passing argument 3 of '_nrn_thread_reg' from incompatible pointer type
+      _nrn_thread_reg(_mechtype, 2, _update_ion_pointer);
+                                    ^
+pyrD2interD_STFD.c:403:13: note: expected 'void (**)(union Datum *)' but argument is of type 'void (*)(union Datum *)'
+ extern void _nrn_thread_reg(int, int, void(*f)(Datum*));
+             ^
+Translating pyrD2pyrD_STFD_new.mod into pyrD2pyrD_STFD_new.c
+Notice: scop_random is not thread safe
+pyrD2pyrD_STFD_new.c: In function '_pyrD2pyrD_STFD_new_reg':
+pyrD2pyrD_STFD_new.c:452:36: warning: passing argument 3 of '_nrn_thread_reg' from incompatible pointer type
+      _nrn_thread_reg(_mechtype, 2, _update_ion_pointer);
+                                    ^
+pyrD2pyrD_STFD_new.c:436:13: note: expected 'void (**)(union Datum *)' but argument is of type 'void (*)(union Datum *)'
+ extern void _nrn_thread_reg(int, int, void(*f)(Datum*));
+             ^
+Translating sahp.mod into sahp.c
+Thread Safe
+Translating sahpNE.mod into sahpNE.c
+Thread Safe
+Translating vecevent.mod into vecevent.c
+Notice: VERBATIM blocks are not thread safe
+Translating xtra_imemrec.mod into xtra_imemrec.c
+Notice: Use of POINTER is not thread safe.
+Notice: Assignment to the GLOBAL variable, "LFP", is not thread safe
+Translating xtra.mod into xtra.c
+Notice: Use of POINTER is not thread safe.
+Notice: Assignment to the GLOBAL variable, "LFP", is not thread safe
