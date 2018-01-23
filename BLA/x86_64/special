@@ -1,13 +1,13 @@
 #!/bin/sh
 if test "x${NRNHOME}" = "x" ; then
-	NRNHOME="/projects/ps-nsg/home/nsguser/applications/neuron7.4/installdir"
+	NRNHOME="/gpfs/homeb/pcp0/pcp0129/neuron_install/nrn"
 fi
 if test "x${NRNBIN}" = "x" ; then
-	NRNBIN="/projects/ps-nsg/home/nsguser/applications/neuron7.4/installdir/x86_64/bin/"
+	NRNBIN="/gpfs/homeb/pcp0/pcp0129/neuron_install/nrn/x86_64/bin/"
 fi
 if test "" = "yes" ; then
 	NRNIV="${NRNBIN}nrniv.app/Contents/MacOS/nrniv"
 else
 	NRNIV="${NRNBIN}nrniv"
 fi
-"${NRNIV}" -dll "/projects/ps-nsg/home/nsguser/ngbw/workspace/NGBW-JOB-NEURON74_TG-FECDF753B06342749EFFB60794E00886/BLA_for_NSG_extrinsic_invivo_QW_disdelay_multielec_forNSG/x86_64/.libs/libnrnmech.so" "$@"
+"${NRNIV}" -dll "/gpfs/work/pcp0/pcp0129/BLA/BLA/x86_64/.libs/libnrnmech.so" "$@"
